@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <title>life finance sim</title>
+
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <link rel="stylesheet" href=style.css>
+    <script src=script.js></script>
+    
+</head>
+<div class="stats">
+</div> 
+ <span style="font-size:15px;cursor:pointer" onclick="openNav()">go to shop</span>
+<center>
+    <body onload="gameinit();">
+    
+    <br>
+    <button onclick="virus()">click this for virus</button>
+    <button onclick="erudainittestfor();">eruda</button>
+
+    
+        <button id=click_button onclick="click_earn()">work for a company</button>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <p>game status:Active player database</p>
+    <p>current booster status:</p><p id="boosterstats">no booster active</p>
+    <p>clicks per second:</p><p id=autovalue></p>
+    <p>time played:</p><p id="time"></p>
+    <p>money per click:</p><p id="clickperclick"></p>
+    <p>the price on each item will increase each time you buy it </p>
+    <button id=gamble onclick="gamble()">go to las vegas</button>
+    <p>price(in money):</p><p id="pricefor1click"></p><button id=add1click onclick="checkadd1click()">get a raise +1 per click</button><br>
+    <p>price(in money):</p><p id="pricefor10click"></p><button id=add10click onclick="checkadd10click()">get a promotion+10 per click</button><br>
+    <p>price(in money):</p><p id="pricefor1clickauto"></p><button id=add1clickauto onclick="checkadd1clickauto()">Start business +1 click per second</button><br>
+    <p>price(in money):</p><p id="pricefor10clickauto"></p><button id=add10clickauto onclick="checkadd10clickauto()">ipo business +10 click per second</button><br>
+    <p>price(in money):</p><p id="pricefor100clickauto"></p><button id=add100clickauto onclick="checkadd100clickauto()">advertise business +100 click per second</button><br>
+    <p>price(in money):</p><p id="pricefor1000clickauto"></p><button id=add1000clickauto onclick="checkadd1000clickauto()">open shops for your business +1000 click per second</button><br>
+    <p>price(in money):</p><p id="pricefor100000clickauto"></p><button id=add100000clickauto onclick="checkadd100000clickauto()">open shops for your business +100000 click per second</button><br>
+    <p>price(in money):</p><p id="pricefor100click"></p><button id=add100click onclick="checkadd100click()">hack the company's salary +100 per click</button><br>
+    <p>price(in money):</p><p id="pricefor1000click"></p><button id=add1000click onclick="checkadd1000click()" >hack company's database for randsome +1000 per click</button><br>
+    <p></p><button style="width:200px;height:50px;" id="boosterbtn"onclick="boosterauto1addcheck()">Buy a booster that doubles your clicks for 1 min (200000 money)</button>
+    </div>
+       
+
+    <div class="stat1">
+        
+    <p style = "visibility: hidden" id=moneystockin></p>
+    <p>investment:</p><p id=investstats></p><br><p id=percentchange></p>
+    <br><input type="number" id=moneyforinvest placeholder="money that you want to invest(must be more than 300)"></input><button id=investmoneytake onclick="investmoneytake()">invest your money</button><button style = "visibility: hidden" id=investmoneyadd onclick="investmoneyadd()">take out money from investing</button>
+    <p id="canvasy"></p>
+    <canvas id="stockchart" width="500" height="300" style="border:1px solid grey"></canvas>
+
+    
+    </div><br>
+    
+
+    
+
+    <div class="money">
+        <p>wallet:</p><p id="moneyid"></p>
+        <p>your user id:</p><p id="userid"></p>
+        <button style="width:150px;height:20px"onclick="generatenewuserid()">generate new user id</button>
+    </div>
+<p class="credits">Developed by:Ronan Chan,Brady Xuan  </p>
+<script src=script.js></script>
+  
+</div>
+</body>
+</center>
+</html>
